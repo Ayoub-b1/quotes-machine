@@ -1,0 +1,67 @@
+:root{
+    --color:#ff00ee;
+}
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,500');
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: var(--color);
+    transition: all 1s ease;
+    font-family: 'raleway',sans-serif;
+    font-size: 2em;
+}
+#quote-box{
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    height: fit-content;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    transition: all 1s ease;
+}
+#text{
+    margin: 10%;
+}
+#author{
+    font-size: 0.5em;
+    align-self: flex-end;
+    margin-right: 10%;
+    color: rgb(92, 92, 92);
+    font-style: italic;
+}
+#new-quote{
+    width: fit-content;
+    align-self: flex-end;
+    background: var(--color);
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+    margin: 5px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+}
+#new-quote:hover , #tweet-quote:hover{
+    opacity: 0.6;
+}
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+#tweet-quote{
+    width: fit-content;
+    aspect-ratio: 1/1;
+    align-self: flex-end;
+    background: var(--color);
+    padding: 5px;
+    border-radius: 15px;
+    border: none;
+    margin: 10px;
+    font-weight: 600;
+    color: #fff;
+}
